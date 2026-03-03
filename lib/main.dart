@@ -17,6 +17,7 @@ import 'package:get/get.dart';
 import 'package:all_acara/acara29/controller/demoController.dart';
 import 'package:all_acara/acara34/get_data.dart';
 import 'package:all_acara/acara35/movie_list.dart';
+import 'package:all_acara/acara36/user_list_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -171,6 +172,13 @@ class HomePage extends StatelessWidget {
               context,
               "ACARA 35 - REST API MOVIE DB",
               MovieList(), // Memanggil class MovieList dari file yang Anda buat sebelumnya
+            ),
+            SizedBox(height: 15),
+
+            menuButton(
+              context,
+              "ACARA 36 - REST API REQRES (List User)",
+              UserListPage(),
             ),
             SizedBox(height: 15),
 
